@@ -33,6 +33,8 @@
 #include <sstream>
 #include <stdio.h>
 #include <stdarg.h>
+#include <thread>
+
 #pragma comment (lib, "Ws2_32.lib")
 #pragma comment (lib, "Mswsock.lib")
 #pragma comment (lib, "AdvApi32.lib")
@@ -65,6 +67,8 @@ MainPage::MainPage()
 	if (!bIsConnected)
 		chatdata->Text = "Not Connected.\n";
 
+	
+
 }
 
 
@@ -72,12 +76,58 @@ void SC::MainPage::TextBlock_SelectionChanged_1(Platform::Object^ sender, Window
 {
 
 }
-
+/*http://stackoverflow.com/questions/154536/encode-decode-urls-in-c*/
+std::string urlEncode(std::string str) {
+	std::string new_str = "";
+	char c;
+	int ic;
+	const char* chars = str.c_str();
+	char bufHex[10];
+	int len = strlen(chars);
+	for (int i = 0; i<len; i++) {
+		c = chars[i];
+		ic = c;
+		if (isalnum(c) || c == '-' || c == '_' || c == '.' || c == '~') new_str += c;
+		else {
+			sprintf(bufHex, "%X", c);
+			if (ic < 16)
+				new_str += "%0";
+			else
+				new_str += "%";
+			new_str += bufHex;
+		}
+	}
+	return new_str;
+}
 
 void SC::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
 	
-	if (chatbox11->Text && bIsConnected) {
+	if (chatdata && chatbox11 && chatbox11->Text && bIsConnected) {
+
+		UpdateChat();
+		
+
+
+		char buffer[4048] = "";
+		char TextData[4048] = "";
+		wcstombs(TextData, chatbox11->Text->Data(), chatbox11->Text->Length() +1);
+
+		std::string tmpString = TextData;
+		tmpString = urlEncode(tmpString);
+		
+
+		sprintf_s(buffer, "hwid=777&message=%s", tmpString.c_str());
+		g_Winsock.InitWinsock();
+		g_Winsock.Connect("sc.r4p1d.xyz");
+		g_Winsock.SendHttpGet("http://sc.r4p1d.xyz/chat.php", buffer);
+		g_Winsock.Disconnect();
+		g_Winsock.CleanUp();
+
+		/*delete[] buffer;
+		delete[] TextData;*/
+
+
 		chatdata->Text += "Ich: " + chatbox11->Text + "\n";
 		chatbox11->Text = "";
 	}
@@ -97,6 +147,31 @@ void SC::MainPage::chatstring_TextChanged(Platform::Object^ sender, Windows::UI:
 	
 }
 
+void SC::MainPage::UpdateChat() {
+
+		if (bIsConnected) {
+			g_Winsock.InitWinsock();
+			g_Winsock.Connect("sc.r4p1d.xyz");
+			std::string chatString = g_Winsock.SendHttpGet("http://sc.r4p1d.xyz/chat.php", "hwid=777");
+			g_Winsock.Disconnect();
+			g_Winsock.CleanUp();
+			if (chatString.length() > 0) {
+				std::wstring wid_str = std::wstring(chatString.begin(), chatString.end());
+				const wchar_t* w_char = wid_str.c_str();
+
+				Platform::String^ toChat = ref new Platform::String(w_char);
+
+				chatdata->Text += "Partner: " + toChat + "\n";
+			}
+			
+			
+
+		}
+		
+		
+
+	
+}
 
 void SC::MainPage::Button_Click_1(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
@@ -120,7 +195,12 @@ void SC::MainPage::Button_Click_1(Platform::Object^ sender, Windows::UI::Xaml::R
 		g_Winsock.InitWinsock();
 		g_Winsock.Connect("sc.r4p1d.xyz");
 		g_Winsock.SendHttpGet("http://sc.r4p1d.xyz/chat.php", buffer);
+		g_Winsock.Disconnect();
+		g_Winsock.CleanUp();
 
+		UpdateChat();
+
+		/*delete[] buffer;*/
 		
 		
 	}
@@ -144,4 +224,10 @@ void SC::MainPage::ort_SelectionChanged(Platform::Object^ sender, Windows::UI::X
 void SC::MainPage::aktivitaeten_SelectionChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::SelectionChangedEventArgs^ e)
 {
 
+}
+
+
+void SC::MainPage::button_Click_2(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	UpdateChat();
 }

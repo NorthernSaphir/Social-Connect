@@ -28,11 +28,11 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.Windows.exe">
       <PackagePath>SC.Windows.exe</PackagePath>
-      <Modified>2016-06-11T19:06:57.172</Modified>
+      <Modified>2016-06-11T21:42:20.189</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.winmd">
       <PackagePath>SC.winmd</PackagePath>
-      <Modified>2016-06-11T15:40:10.866</Modified>
+      <Modified>2016-06-11T21:28:59.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\new icon4.ico">
       <PackagePath>new icon4.ico</PackagePath>
@@ -64,7 +64,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2016-06-11T17:30:20.783</Modified>
+      <Modified>2016-06-11T21:40:26.939</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\resources.pri">
       <PackagePath>resources.pri</PackagePath>

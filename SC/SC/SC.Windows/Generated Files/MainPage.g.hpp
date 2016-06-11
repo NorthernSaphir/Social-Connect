@@ -30,6 +30,8 @@ void ::SC::MainPage::InitializeComponent()
     chatbox11 = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"chatbox11"));
     // Get the TextBox named 'chatdata'
     chatdata = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"chatdata"));
+    // Get the Button named 'button'
+    button = safe_cast<::Windows::UI::Xaml::Controls::Button^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"button"));
 }
 
 void ::SC::MainPage::Connect(int connectionId, Platform::Object^ target)
@@ -59,6 +61,10 @@ void ::SC::MainPage::Connect(int connectionId, Platform::Object^ target)
     case 6:
         (safe_cast<::Windows::UI::Xaml::Controls::Primitives::ButtonBase^>(target))->Click +=
             ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::SC::MainPage::*)(Platform::Object^, Windows::UI::Xaml::RoutedEventArgs^))&MainPage::Button_Click);
+        break;
+    case 7:
+        (safe_cast<::Windows::UI::Xaml::Controls::Primitives::ButtonBase^>(target))->Click +=
+            ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::SC::MainPage::*)(Platform::Object^, Windows::UI::Xaml::RoutedEventArgs^))&MainPage::button_Click_2);
         break;
     }
     (void)connectionId; // Unused parameter

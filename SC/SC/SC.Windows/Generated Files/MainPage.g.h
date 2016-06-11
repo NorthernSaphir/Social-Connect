@@ -15,6 +15,7 @@ namespace Windows {
                 ref class ComboBox;
                 ref class ListView;
                 ref class TextBox;
+                ref class Button;
             }
         }
     }
@@ -36,6 +37,7 @@ namespace SC
         private: ::Windows::UI::Xaml::Controls::ListView^ aktivitaeten;
         private: ::Windows::UI::Xaml::Controls::TextBox^ chatbox11;
         private: ::Windows::UI::Xaml::Controls::TextBox^ chatdata;
+        private: ::Windows::UI::Xaml::Controls::Button^ button;
     };
 }
 

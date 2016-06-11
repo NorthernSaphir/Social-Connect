@@ -30,7 +30,7 @@
             <ComboBoxItem Content="Rendsburg"/>
         </ComboBox>
         <ListView x:ConnectionId='2' x:Name="aktivitaeten" HorizontalAlignment="Left" Height="202" Margin="50,193,0,0" VerticalAlignment="Top" Width="332"                                                  IsSynchronizedWithCurrentItem="False">
-            <ListViewItem Content=" Kino"/>
+            <ListViewItem Content=" Kino" Margin="0" Height="45"/>
             <ListViewItem Content=" Essen"/>
             <ListViewItem Content=" Fahrradfahren"/>
             <ListViewItem Content=" Party"/>
@@ -44,15 +44,16 @@
             <ListViewItem Content=" Reiten"/>
             <ListViewItem Content=" Yoga"/>
         </ListView>
-        <TextBlock x:ConnectionId='3' HorizontalAlignment="Left" Margin="50,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="240" FontSize="14"                                                >
+        <TextBlock x:ConnectionId='3' HorizontalAlignment="Left" Margin="50,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="240" FontSize="14"                                                >
         	<Run Text="Wähle "/>
         	<Run Text="d"/>
         	<Run Text="eine Aktivitäten"/>
         </TextBlock>
         <Button x:ConnectionId='4' Content="Suchen" HorizontalAlignment="Left" Margin="47,397,0,0" VerticalAlignment="Top" Width="246"                       />
         <TextBox x:ConnectionId='5' x:Name="chatbox11" HorizontalAlignment="Left" Margin="387,363,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380" FontFamily="Global User Interface" PlaceholderText="Nachricht"                                     />
-        <Button x:ConnectionId='6' Content="Button" HorizontalAlignment="Left" Margin="384,397,0,0" VerticalAlignment="Top" Width="386"                     />
+        <Button x:ConnectionId='6' Content="Senden" HorizontalAlignment="Left" Margin="384,397,0,0" VerticalAlignment="Top" Width="386"                     />
         <TextBox x:Name="chatdata" HorizontalAlignment="Left" Margin="387,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="238" Width="380" IsReadOnly="True"/>
+        <Button x:ConnectionId='7' x:Name="button" Content="Refresh Chat" HorizontalAlignment="Left" Margin="769,117,0,0" VerticalAlignment="Top"                       />
 
     </Grid>
 </Page>
