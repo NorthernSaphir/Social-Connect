@@ -53,7 +53,9 @@ else{
 		if ($row['Lastmessage'] == NULL)
 			mysql_query("UPDATE User SET Lastmessage=CONCAT('".$row['Lastmessage']."','".$message."') WHERE HWID=".$hwid."");
 		else
-			mysql_query("UPDATE User SET Lastmessage=CONCAT('".$row['Lastmessage']."','<br>".$message."') WHERE HWID=".$hwid."");
+			mysql_query("UPDATE User SET Lastmessage=CONCAT('".$row['Lastmessage']."','
+".$message."
+') WHERE HWID=".$hwid."");
 	}
 	$res = mysql_query("select * from User where HWID='". $row['conHWID'] . "'");
 	$row = mysql_fetch_assoc($res);
