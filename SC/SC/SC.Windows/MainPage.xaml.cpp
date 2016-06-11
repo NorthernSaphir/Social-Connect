@@ -109,11 +109,17 @@ void SC::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::Rou
 		
 
 
-		char buffer[4048] = "";
-		char TextData[4048] = "";
+		char buffer[4096] = "";
+		char TextData[4096] = "";
+		if (sizeof(chatbox11->Text->Data()) > 4096) {
+			return;
+		}
 		wcstombs(TextData, chatbox11->Text->Data(), chatbox11->Text->Length() +1);
 
 		std::string tmpString = TextData;
+		if (tmpString.length() > 4096) {
+			return;
+		}
 		tmpString = urlEncode(tmpString);
 		
 
