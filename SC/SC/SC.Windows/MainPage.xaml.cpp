@@ -33,3 +33,26 @@ void SC::MainPage::TextBlock_SelectionChanged_1(Platform::Object^ sender, Window
 {
 
 }
+
+
+void SC::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	if (chatbox11->Text) {
+		chatdata->Text += "Ich: " + chatbox11->Text + "\n";
+		chatbox11->Text = "";
+	}
+	
+	
+}
+
+
+void SC::MainPage::chatdata_TextChanged(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+
+}
+
+
+void SC::MainPage::chatstring_TextChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::TextChangedEventArgs^ e)
+{
+	
+}

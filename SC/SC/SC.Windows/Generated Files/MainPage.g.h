@@ -8,6 +8,15 @@
 //     the code is regenerated.
 //------------------------------------------------------------------------------
 
+namespace Windows {
+    namespace UI {
+        namespace Xaml {
+            namespace Controls {
+                ref class TextBox;
+            }
+        }
+    }
+}
 
 namespace SC
 {
@@ -21,6 +30,8 @@ namespace SC
     private:
         bool _contentLoaded;
     
+        private: ::Windows::UI::Xaml::Controls::TextBox^ chatbox11;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ chatdata;
     };
 }
 

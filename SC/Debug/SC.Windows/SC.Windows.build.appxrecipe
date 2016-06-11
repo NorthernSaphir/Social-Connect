@@ -1,50 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-U8QV492</Machine>
-    <WindowsUser>LN2</WindowsUser>
+    <Machine>NIKLAS-MSI</Machine>
+    <WindowsUser>Niklas</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
     <SolutionConfiguration>Debug|Win32</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>3e3d85db-bee7-4669-b7a9-c2cc04ec9fbc</PackageIdentityName>
-    <IntermediateOutputPath>c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.Windows.exe">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.Windows.exe">
       <PackagePath>SC.Windows.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.winmd">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.winmd">
       <PackagePath>SC.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

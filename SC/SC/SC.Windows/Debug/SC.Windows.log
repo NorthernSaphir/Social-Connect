@@ -1,27 +1,3 @@
-﻿Build started 11.06.2016 14:14:55.
-     1>Project "c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\SC.Windows.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\\" /I"Generated Files\\" /IDebug\ /I"c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"Debug\SC.Windows.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /wd4453 /wd28204 /FU"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj MainPage.xaml.cpp "c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Shared\App.xaml.cpp"
-         MainPage.xaml.cpp
-         App.xaml.cpp
-       CreateWinMD:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.Windows.exe" /INCREMENTAL /NOLOGO kernel32.lib /MANIFEST:NO /DEBUG /PDB:"c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.Windows.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:ONLY /WINMDFILE:"c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\App.xaml.obj
-         Debug\pch.obj
-         Debug\MainPage.xaml.obj
-         Debug\XamlTypeInfo.Impl.g.obj
-       CompileXamlGeneratedFiles:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\\" /I"Generated Files\\" /IDebug\ /I"c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"Debug\SC.Windows.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /wd4453 /wd28204 /FU"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj "Generated Files\XamlTypeInfo.g.cpp"
-         XamlTypeInfo.g.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.Windows.exe" /INCREMENTAL /NOLOGO kernel32.lib /MANIFEST:NO /DEBUG /PDB:"c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.Windows.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:NO /WINMDFILE:"c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\App.xaml.obj
-         Debug\pch.obj
-         Debug\MainPage.xaml.obj
-         Debug\XamlTypeInfo.Impl.g.obj
-         Debug\XamlTypeInfo.g.obj
-            Creating library c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.Windows.lib and object c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.Windows.exp
-         SC.Windows.vcxproj -> c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.Windows.exe
-     1>Done Building Project "c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\SC.Windows.vcxproj" (Build target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:03.62
+﻿  CWinsock.cpp
+     Bibliothek "C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.Windows.lib" und Objekt "C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.Windows.exp" werden erstellt.
+  SC.Windows.vcxproj -> C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.Windows.exe

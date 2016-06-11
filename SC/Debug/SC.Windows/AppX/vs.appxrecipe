@@ -1,14 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-U8QV492</Machine>
-    <WindowsUser>LN2</WindowsUser>
+    <Machine>NIKLAS-MSI</Machine>
+    <WindowsUser>Niklas</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
     <SolutionConfiguration>Debug|Win32</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>3e3d85db-bee7-4669-b7a9-c2cc04ec9fbc</PackageIdentityName>
-    <IntermediateOutputPath>c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>9E2C82721B48838094D078914E5A7F0F76011B78598BB635340293EA8D9031EC</RegisteredManifestChecksum>
+    <IntermediateOutputPath>C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>7698722E3AD641600C751F5FB38DDE632314817BC5575B8CC0C2483A1A8F92CC</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3e3d85db-bee7-4669-b7a9-c2cc04ec9fbc_1.0.0.0_x86__r2agkcctak1qy</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3e3d85db-bee7-4669-b7a9-c2cc04ec9fbc_r2agkcctak1qy!App</RegisteredUserModeAppID>
     <RegisteredPackageID>3e3d85db-bee7-4669-b7a9-c2cc04ec9fbc</RegisteredPackageID>
@@ -17,52 +19,52 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-11T09:29:59.075</Modified>
+      <Modified>2016-06-11T14:14:24.993</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.Windows.exe">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.Windows.exe">
       <PackagePath>SC.Windows.exe</PackagePath>
-      <Modified>2016-06-11T12:14:58.740</Modified>
+      <Modified>2016-06-11T14:14:24.582</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\SC.winmd">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.winmd">
       <PackagePath>SC.winmd</PackagePath>
-      <Modified>2016-06-11T09:29:56.874</Modified>
+      <Modified>2016-06-11T13:43:11.373</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T08:55:28.000</Modified>
+      <Modified>2016-06-11T12:33:51.079</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T08:55:28.000</Modified>
+      <Modified>2016-06-11T12:33:51.080</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T08:55:28.000</Modified>
+      <Modified>2016-06-11T12:33:51.082</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T08:55:28.000</Modified>
+      <Modified>2016-06-11T12:33:51.081</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2016-06-11T09:29:57.024</Modified>
+      <Modified>2016-06-11T13:43:11.533</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2016-06-11T12:14:57.373</Modified>
+      <Modified>2016-06-11T13:43:11.536</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\Users\LN2\documents\visual studio 2013\Projects\SC\Debug\SC.Windows\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-11T09:29:58.908</Modified>
+      <Modified>2016-06-11T14:14:24.931</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

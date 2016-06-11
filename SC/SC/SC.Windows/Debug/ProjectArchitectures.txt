@@ -1,1 +1,1 @@
-c:\Users\LN2\documents\visual studio 2013\Projects\SC\SC\SC.Windows\SC.Windows.vcxproj;x86
+C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\SC.Windows.vcxproj;x86
