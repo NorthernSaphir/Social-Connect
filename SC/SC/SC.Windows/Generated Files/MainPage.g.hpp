@@ -22,6 +22,10 @@ void ::SC::MainPage::InitializeComponent()
     // Call LoadComponent on ms-appx:///MainPage.xaml
     ::Windows::UI::Xaml::Application::LoadComponent(this, ref new ::Windows::Foundation::Uri(L"ms-appx:///MainPage.xaml"), ::Windows::UI::Xaml::Controls::Primitives::ComponentResourceLocation::Application);
 
+    // Get the ComboBox named 'ort'
+    ort = safe_cast<::Windows::UI::Xaml::Controls::ComboBox^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"ort"));
+    // Get the ListView named 'aktivitaeten'
+    aktivitaeten = safe_cast<::Windows::UI::Xaml::Controls::ListView^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"aktivitaeten"));
     // Get the TextBox named 'chatbox11'
     chatbox11 = safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(static_cast<Windows::UI::Xaml::IFrameworkElement^>(this)->FindName(L"chatbox11"));
     // Get the TextBox named 'chatdata'
@@ -33,14 +37,26 @@ void ::SC::MainPage::Connect(int connectionId, Platform::Object^ target)
     switch (connectionId)
     {
     case 1:
+        (safe_cast<::Windows::UI::Xaml::Controls::Primitives::Selector^>(target))->SelectionChanged +=
+            ref new ::Windows::UI::Xaml::Controls::SelectionChangedEventHandler(this, (void (::SC::MainPage::*)(Platform::Object^, Windows::UI::Xaml::Controls::SelectionChangedEventArgs^))&MainPage::ort_SelectionChanged);
+        break;
+    case 2:
+        (safe_cast<::Windows::UI::Xaml::Controls::Primitives::Selector^>(target))->SelectionChanged +=
+            ref new ::Windows::UI::Xaml::Controls::SelectionChangedEventHandler(this, (void (::SC::MainPage::*)(Platform::Object^, Windows::UI::Xaml::Controls::SelectionChangedEventArgs^))&MainPage::aktivitaeten_SelectionChanged);
+        break;
+    case 3:
         (safe_cast<::Windows::UI::Xaml::Controls::TextBlock^>(target))->SelectionChanged +=
             ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::SC::MainPage::*)(Platform::Object^, Windows::UI::Xaml::RoutedEventArgs^))&MainPage::TextBlock_SelectionChanged_1);
         break;
-    case 2:
+    case 4:
+        (safe_cast<::Windows::UI::Xaml::Controls::Primitives::ButtonBase^>(target))->Click +=
+            ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::SC::MainPage::*)(Platform::Object^, Windows::UI::Xaml::RoutedEventArgs^))&MainPage::Button_Click_1);
+        break;
+    case 5:
         (safe_cast<::Windows::UI::Xaml::Controls::TextBox^>(target))->TextChanged +=
             ref new ::Windows::UI::Xaml::Controls::TextChangedEventHandler(this, (void (::SC::MainPage::*)(Platform::Object^, Windows::UI::Xaml::Controls::TextChangedEventArgs^))&MainPage::chatstring_TextChanged);
         break;
-    case 3:
+    case 6:
         (safe_cast<::Windows::UI::Xaml::Controls::Primitives::ButtonBase^>(target))->Click +=
             ref new ::Windows::UI::Xaml::RoutedEventHandler(this, (void (::SC::MainPage::*)(Platform::Object^, Windows::UI::Xaml::RoutedEventArgs^))&MainPage::Button_Click);
         break;

@@ -24,6 +24,9 @@
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.winmd">
       <PackagePath>SC.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\new icon4.ico">
+      <PackagePath>new icon4.ico</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

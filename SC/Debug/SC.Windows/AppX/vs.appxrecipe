@@ -22,49 +22,53 @@
     <AppXManifest Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-11T14:14:24.993</Modified>
+      <Modified>2016-06-11T15:44:39.919</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.Windows.exe">
       <PackagePath>SC.Windows.exe</PackagePath>
-      <Modified>2016-06-11T14:14:24.582</Modified>
+      <Modified>2016-06-11T17:30:21.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.winmd">
       <PackagePath>SC.winmd</PackagePath>
-      <Modified>2016-06-11T13:43:11.373</Modified>
+      <Modified>2016-06-11T15:40:10.866</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\new icon4.ico">
+      <PackagePath>new icon4.ico</PackagePath>
+      <Modified>2016-06-11T15:40:14.172</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-11T12:33:51.079</Modified>
+      <Modified>2016-06-11T15:40:12.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-11T12:33:51.080</Modified>
+      <Modified>2016-06-11T15:40:12.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-11T12:33:51.082</Modified>
+      <Modified>2016-06-11T15:40:12.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\SC\SC.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-06-11T12:33:51.081</Modified>
+      <Modified>2016-06-11T15:40:12.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2016-06-11T13:43:11.533</Modified>
+      <Modified>2016-06-11T15:43:59.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2016-06-11T13:43:11.536</Modified>
+      <Modified>2016-06-11T17:30:20.783</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-06-11T14:14:24.931</Modified>
+      <Modified>2016-06-11T15:44:39.872</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

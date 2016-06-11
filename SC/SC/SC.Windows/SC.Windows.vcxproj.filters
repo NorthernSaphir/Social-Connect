@@ -23,6 +23,7 @@
     <ClInclude Include="CWinsock.h">
       <Filter>Assets\WinSocks</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest" />
@@ -43,5 +44,9 @@
     <Image Include="Assets\SplashScreen.scale-100.png">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="..\..\..\new icon4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SC.Windows.rc" />
   </ItemGroup>
 </Project>

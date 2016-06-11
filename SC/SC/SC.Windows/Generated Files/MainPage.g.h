@@ -12,6 +12,8 @@ namespace Windows {
     namespace UI {
         namespace Xaml {
             namespace Controls {
+                ref class ComboBox;
+                ref class ListView;
                 ref class TextBox;
             }
         }
@@ -30,6 +32,8 @@ namespace SC
     private:
         bool _contentLoaded;
     
+        private: ::Windows::UI::Xaml::Controls::ComboBox^ ort;
+        private: ::Windows::UI::Xaml::Controls::ListView^ aktivitaeten;
         private: ::Windows::UI::Xaml::Controls::TextBox^ chatbox11;
         private: ::Windows::UI::Xaml::Controls::TextBox^ chatdata;
     };
