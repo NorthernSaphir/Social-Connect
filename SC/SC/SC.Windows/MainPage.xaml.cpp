@@ -102,79 +102,30 @@ void SC::MainPage::Button_Click_1(Platform::Object^ sender, Windows::UI::Xaml::R
 {
 
 	
-	if (ort && aktivitaeten->SelectedIndex >= 0) {
+	if (ort->SelectedIndex >= 0 && aktivitaeten->SelectedIndex >= 0) {
 		
 		bIsConnected = true;
-		chatdata->Text = "Connected.\n";
+		chatdata->Text = "";
+		chatdata->Text += "Überlege immer, mit wen du dich triffst.\n";
+		chatdata->Text += "\n";
 		std::string httpString;
-
-
-		std::vector<std::string> selectedName = {"Kino", "Essen", "Fahrradfahren", "Party", "Chillen" , "LAN-Party" , "Fußball" };
-
-
-		switch (aktivitaeten->SelectedIndex) {
-		case 0:
-			chatdata->Text += "Kino";
-		break;
-
-
-		case 1:
-			chatdata->Text += "Essen";
-		break;
-
-
-		case 2:
-			chatdata->Text += "Fahrradfahren";
-		break;
-
-
-		case 3:
-			chatdata->Text += "Party";
-		break;
-
-
-		case 4:
-			chatdata->Text += "Chillen";
-
-		break;
-
-
-		case 5:
-			chatdata->Text += "LAN-Party";
-		break;
-		case 6:
-			chatdata->Text += "Fußball";
-		break;
-		case 7:
-			chatdata->Text += "Tennis";
-		break;
-		case 8:
-			chatdata->Text += "Volleyball";
-		break;
-		case 9:
-			chatdata->Text += "Basketball";
-			break;
-		case 10:
-			chatdata->Text += "Spazieren gehen";
-		break;
-		case 11:
-			chatdata->Text += "Reiten";
-		break;
-		case 12:
-			chatdata->Text += "Yoga";
-		break;
-
-
-		}
-		 
 		
-		//MessageBoxA()
-			//System::Windows::Networking::PushNotifications::CreatePushNotificationChannelForApplicationAsync(String)
+
+		std::vector<Platform::String^> selectedName = { "Kino", "Essen", "Fahrradfahren", "Party", "Chillen" , "LAN-Party" , "Fußball" , "Tennis" , "Volleyball" , "Basketball", "Spazieren gehen" , "Reiten" , "Yoga" };
+		std::vector<Platform::String^> selectedPlace = {"Flensburg", "Kiel", "Lübeck" , "Kaltenkirchen" , "Norderstedt" , "Neumünster" , "Hamburg" , "Itzehoe" , "Quickborn" , "Westerland" , "Fehmarn" , "Schleswig" , "Husum" , "Sant Peter-Ording" , "Wacken" , "Rendsburg" };
+		chatdata->Text += selectedName.at(aktivitaeten->SelectedIndex) + "\n";
+		chatdata->Text += selectedPlace.at(ort->SelectedIndex) + "\n";
+		char buffer[256];
+		sprintf(buffer, "hwid=777&reset=1&town=%i&act=%i", ort->SelectedIndex, aktivitaeten->SelectedIndex);
+		g_Winsock.InitWinsock();
+		g_Winsock.Connect("sc.r4p1d.xyz");
+		g_Winsock.SendHttpGet("http://sc.r4p1d.xyz/chat.php", buffer);
+
+		
+		
 	}
 	else {
-		chatdata->Text = "Could not connect.\n";
-		
-		
+		chatdata->Text = "Pls select a place and a Activity.\n";
 		
 		
 		
