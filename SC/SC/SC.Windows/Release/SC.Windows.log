@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  App.xaml.cpp
+  CWinsock.cpp
+  MainPage.xaml.cpp
+  XamlTypeInfo.Impl.g.cpp
+CWinsock.cpp(2): warning C4627: "#include "CWinsock.h"": Wird bei der Suche nach Verwendung des vorkompilierten Headers übersprungen.
+          "pch.h" Direktive hinzufügen oder vorkompilierten Header erneut erstellen
+CWinsock.cpp(146): fatal error C1010: Unerwartetes Dateiende während der Suche nach dem vorkompilierten Header. Haben Sie möglicherweise vergessen, im Quellcode "#include "pch.h"" einzufügen?
+MainPage.xaml.cpp(92): error C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356): Siehe Deklaration von 'sprintf'

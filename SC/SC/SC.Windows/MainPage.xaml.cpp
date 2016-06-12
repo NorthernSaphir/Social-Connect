@@ -77,7 +77,7 @@ void SC::MainPage::TextBlock_SelectionChanged_1(Platform::Object^ sender, Window
 
 }
 /*http://stackoverflow.com/questions/154536/encode-decode-urls-in-c*/
-std::string urlEncode(std::string str) {
+std::string urlEncode(std::string str) { //ß ist halt broken lol
 	std::string new_str = "";
 	char c;
 	int ic;
@@ -100,7 +100,7 @@ std::string urlEncode(std::string str) {
 	return new_str;
 }
 
-void SC::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+void SC::MainPage::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e) //sending
 {
 	
 	if (chatdata && chatbox11 && chatbox11->Text && bIsConnected) {
@@ -153,7 +153,7 @@ void SC::MainPage::chatstring_TextChanged(Platform::Object^ sender, Windows::UI:
 	
 }
 
-void SC::MainPage::UpdateChat() {
+void SC::MainPage::UpdateChat() { //ChatUpdating
 
 		if (bIsConnected) {
 			g_Winsock.InitWinsock();
@@ -179,7 +179,7 @@ void SC::MainPage::UpdateChat() {
 	
 }
 
-void SC::MainPage::Button_Click_1(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+void SC::MainPage::Button_Click_1(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)//Connecting
 {
 
 	
@@ -187,26 +187,35 @@ void SC::MainPage::Button_Click_1(Platform::Object^ sender, Windows::UI::Xaml::R
 		
 		bIsConnected = true;
 		chatdata->Text = "";
-		chatdata->Text += "Überlege immer, mit wen du dich triffst.\n";
+		chatdata->Text += "Überlege immer, mit wem und wo du dich triffst.\n";
 		chatdata->Text += "\n";
 		std::string httpString;
 		
 
-		std::vector<Platform::String^> selectedName = { "Kino", "Essen", "Fahrradfahren", "Party", "Chillen" , "LAN-Party" , "Fußball" , "Tennis" , "Volleyball" , "Basketball", "Spazieren gehen" , "Reiten" , "Yoga" };
-		std::vector<Platform::String^> selectedPlace = {"Flensburg", "Kiel", "Lübeck" , "Kaltenkirchen" , "Norderstedt" , "Neumünster" , "Hamburg" , "Itzehoe" , "Quickborn" , "Westerland" , "Fehmarn" , "Schleswig" , "Husum" , "Sant Peter-Ording" , "Wacken" , "Rendsburg" };
-		chatdata->Text += selectedName.at(aktivitaeten->SelectedIndex) + "\n";
-		chatdata->Text += selectedPlace.at(ort->SelectedIndex) + "\n";
+		//std::vector<Platform::String^> selectedName = { "Kino", "Essen", "Fahrradfahren", "Party", "Chillen" , "LAN-Party" , "Fußball" , "Tennis" , "Volleyball" , "Basketball", "Spazieren gehen" , "Reiten" , "Yoga" };
+		//std::vector<Platform::String^> selectedPlace = {"Flensburg", "Kiel", "Lübeck" , "Kaltenkirchen" , "Norderstedt" , "Neumünster" , "Hamburg" , "Itzehoe" , "Quickborn" , "Westerland" , "Fehmarn" , "Schleswig" , "Husum" , "Sant Peter-Ording" , "Wacken" , "Rendsburg" };
+		//chatdata->Text += selectedName.at(aktivitaeten->SelectedIndex) + "\n";
+		//chatdata->Text += selectedPlace.at(ort->SelectedIndex) + "\n";
 		char buffer[256];
 		sprintf(buffer, "hwid=777&reset=1&town=%i&act=%i", ort->SelectedIndex, aktivitaeten->SelectedIndex);
 		g_Winsock.InitWinsock();
 		g_Winsock.Connect("sc.r4p1d.xyz");
-		g_Winsock.SendHttpGet("http://sc.r4p1d.xyz/chat.php", buffer);
+		std::string sConnected = g_Winsock.SendHttpGet("http://sc.r4p1d.xyz/chat.php", buffer);
 		g_Winsock.Disconnect();
 		g_Winsock.CleanUp();
 
+		if (sConnected.length() > 0) {
+			std::wstring wid_str = std::wstring(sConnected.begin(), sConnected.end());
+			const wchar_t* w_char = wid_str.c_str();
+
+			Platform::String^ toChat = ref new Platform::String(w_char);
+			if(toChat->Length() > 2)
+			chatdata->Text += "Partner gefunden!\n";
+		}
+
 		UpdateChat();
 
-		/*delete[] buffer;*/
+
 		
 		
 	}

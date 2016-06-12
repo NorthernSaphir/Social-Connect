@@ -28,7 +28,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.Windows.exe">
       <PackagePath>SC.Windows.exe</PackagePath>
-      <Modified>2016-06-11T22:16:25.935</Modified>
+      <Modified>2016-06-12T08:08:25.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\SC.winmd">
       <PackagePath>SC.winmd</PackagePath>
@@ -64,7 +64,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2016-06-11T22:16:23.542</Modified>
+      <Modified>2016-06-12T08:08:21.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Niklas\Documents\GitHub\Social-Connect\SC\Debug\SC.Windows\resources.pri">
       <PackagePath>resources.pri</PackagePath>

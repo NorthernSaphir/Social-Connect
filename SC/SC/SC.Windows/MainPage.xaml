@@ -44,7 +44,7 @@
             <ListViewItem Content=" Reiten"/>
             <ListViewItem Content=" Yoga"/>
         </ListView>
-        <TextBlock HorizontalAlignment="Left" Margin="50,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="240" FontSize="14" SelectionChanged="TextBlock_SelectionChanged_1">
+        <TextBlock HorizontalAlignment="Left" Margin="50,173,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="240" FontSize="14" SelectionChanged="TextBlock_SelectionChanged_1">
         	<Run Text="Wähle "/>
         	<Run Text="d"/>
         	<Run Text="eine Aktivitäten"/>
