@@ -32,14 +32,14 @@ if ($reset == 1) {
 	mysql_query("UPDATE User SET conHWID=NULL WHERE HWID = '" . $hwid . "'");
 	$res = mysql_query("select * from User WHERE conHWID IS NULL AND HWID != '" . $hwid . "' AND town='" . $town . "' AND act='" . $act . "'");
 	$count = mysql_num_rows($res);
-	if ($count0) {
+	if ($count > 0) {
 		$count = rand(1, $count);
 		while ($row = mysql_fetch_array($res)) {
 			$c1+= 1;
 			if ($c1 == $count) {
 				mysql_query("UPDATE User SET conHWID='" . $row['HWID'] . "' WHERE HWID = '" . $hwid . "'");
 				mysql_query("UPDATE User SET conHWID='" . $hwid . "' WHERE HWID = '" . $row['HWID'] . "'");
-				echo 'Partner gefunden' .
+				echo 'Partner gefunden';
 			}
 		}
 	}
